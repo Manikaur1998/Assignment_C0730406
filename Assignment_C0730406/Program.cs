@@ -8,37 +8,44 @@ namespace Assignment_C0730406
 {
     class Program2
     {//Manpreet kaur
-        //(730406)
-         
+     //(730406)
 
-            string[] Letters = new string[26] {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "1",
-"m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-
-        public static void Main()
+        class Program
         {
+            public static Program2 Program2 { get; private set; }
 
-            Program2 orange = new Program2();
-            Console.WriteLine(orange.Gematria("universe"));
-            Console.ReadLine();
-        }
-
-        public int Gematria(string word)
-        {
-
-            int GematriaValue = 0;
-            for (int i = 0; i < word.Length; i++)
-            { GematriaValue += LetterValue(word[i].ToString()); }
-            return GematriaValue;
-        }
-
-        public int LetterValue(string letter)
-        {
-            int x = 0;
-            while (Letters[x] != letter)
+            static void Main(string[] args)
             {
-                if (Letters[x++] == letter) return -1;
+                Program2 = new Program2();
+                Console.WriteLine("the longest word is :");
+                Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed processing by an Analytical Engine."));
             }
-            return x + 1;
+
+            public MyFunctionA(string input)
+            {
+                //Write a C# program to find the longest word in a string.
+                string[] words = input.Split(' ');
+
+                int wordArrayLength = words.Length;
+                int[] wordsLength = new int[wordArrayLength];
+
+                foreach (var word in words)
+                {
+                    //TODO
+                }
+                //loop post condition: we now have array wordsLength which
+                //contains the lengths of each word
+
+                string currentWord = words[0];
+                string nextWord;
+
+                for (int y = 0; y < words.Length - 1; y++)
+                {
+                    currentWord = words[y];
+                    nextWord = words[y + 1];
+                    //TODO: Use an IF Statement to make sure that variable longestWord
+                    // is always set to the Longest Word in th input string
+                }
+            }
         }
     }
-}
