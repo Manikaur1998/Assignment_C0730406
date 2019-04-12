@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Assignment_C0730406
 {
     class Program2
-    {
+    {//Manpreet kaur(730406)
             string[] Letters = new string[26] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
 
             public static void Main()
